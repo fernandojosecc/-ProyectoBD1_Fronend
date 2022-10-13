@@ -1,0 +1,35 @@
+footer{
+  position: absolute;
+  bottom: 0;
+}
+
+
+.SMS {
+  color: white !important;
+  margin: 10px;
+  padding: 8px;
+  max-width: 50%;
+  margin-left: 8px;
+  border-radius: 15px;
+  float: left;
+  text-align: left;
+  background-image: linear-gradient(to right, hsl(239, 41%, 42%), hsl(226, 100%, 50%));
+}
+
+.mySMS {
+  color: white !important;
+  margin: 10px;
+  padding: 8px;
+  max-width: 50%;
+  margin-left: 8px;
+  border-radius: 15px;
+  float: right;
+  text-align: right;
+  background-image: linear-gradient(to right, hsl(239, 41%, 42%), hsl(226, 100%, 50%));
+}
+
+.border{
+  border-style: solid;
+  border-width: 2px;
+  boder-color: black;
+}

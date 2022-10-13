@@ -1,0 +1,240 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 40%;
+}
+
+
+
+/*
+1. Posicionamiento
+2. Modelo de caja (Box model)
+3. Tipografia
+4. Visuales
+5. Otros
+*/
+
+html {
+    font-size: 62.5%;
+    font-family: "DM Sans", sans-serif;
+}
+
+nav {
+    background: linear-gradient(232deg, #4d40ff, #a94eff);
+    border: none;
+    -webkit-animation: bgAnimateBitcoin 5s ease infinite;
+    -moz-animation: bgAnimateBitcoin 5s ease infinite;
+    animation: bgAnimateBitcoin 5s ease infinite;
+}
+
+.text {
+    text-align: center;
+    color: pink !important;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.navbar-brand {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.navbar-brand2 {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    background: linear-gradient(27deg, #5448c8 50%, #7776bc 50%);
+    height: 875px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 26px;
+    place-content: center;
+}
+
+.product-card {
+    width: 240px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.border{
+  height: 625px;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  overflow-y: scroll;
+  
+}
+.chat-row {
+    width: 100%;
+    float: left;
+    margin-bottom: 8px;
+}
+
+.chati {
+    color: orange !important;
+    margin: 0;
+    padding: 8px;
+    max-width: 60%;
+    height: 40px;
+    margin-left: 8px;
+    border-radius: 8px;
+    background-image: linear-gradient( to right, hsl(239, 41%, 42%), hsl(226, 100%, 50%));
+}
+
+.SMS {
+    color: black !important;
+    margin: 10px;
+    padding: 0.5rem;
+    max-width: 75%;
+    margin-left: 8px;
+    line-height: 1.25;
+    border-radius: 1.15rem;
+    float: left;
+    text-align: left;
+    background-color: #e8e8e8;
+}
+
+.mySMS {
+    color: white !important;
+    margin: 10px;
+    padding: 0.5rem;
+    max-width: 75%;
+    margin-left: 8px;
+    line-height: 1.25;
+    border-radius: 1.15rem;
+    float: right;
+    text-align: right;
+    background-color: #9190d4;
+}
+
+.mySMS h6 {
+    font-size: 0.7rem;
+}
+.SMS h6{
+  font-size: 0.7rem;
+}
+
+.recuadro {
+    color: #26ccff !important;
+}
+
+
+#chat-footer {
+    width: 100%;
+    height: 50px;
+    padding: 6px;
+    position: center;
+    background-color: hsl(206, 6%, 79%);
+    border-radius: 3rem;
+    margin-bottom: 50px;
+}
+
+.input-msg {
+    width: 100%;
+    border-radius: 3rem;
+    font-size: 1em;
+    padding: 10px 35px 8px 20px;
+    height: 100%;
+    outline: none;
+    line-height: 1;
+    margin-bottom: 15px;
+    border-color: hsl(206, 6%, 79%);
+    display: flex;
+    justify-content: center;
+}
+
+.input-msg::placeholder {
+    color: hsl(206, 6%, 79%);
+}
+
+.btn-sent {
+    position: absolute;
+    top: 13px;
+    right: 11px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #393373;
+    border: none;
+    color: #fff;
+}
+
+.btn-sent:hover {
+    filter: brightness(150%);
+}
+
+.btn-sent:focus {
+    outline: none;
+}
+
+.botSMS {
+    background-color: #717c89;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 1.15rem;
+    opacity: 0.5;
+}
+
+@-webkit-keyframes bgAnimateBitcoin {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-moz-keyframes bgAnimateBitcoin {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes bgAnimateBitcoin {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

@@ -1,0 +1,276 @@
+/*
+1. Posicionamiento
+2. Modelo de caja (Box model)
+3. Tipografia
+4. Visuales
+5. Otros
+*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+  font-family: 'DM Sans',sans-serif;
+}
+nav {
+  background: linear-gradient(232deg, #393373, #9190d4);
+  border: none;
+  -webkit-animation: bgAnimateBitcoin 5s ease infinite;
+    -moz-animation: bgAnimateBitcoin 5s ease infinite;
+    animation: bgAnimateBitcoin 5s ease infinite;
+    display: flex;
+}
+
+.text {
+  text-align: center;
+  color: black !important;
+}
+
+.botoncanal {
+  position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    bottom: 30px;
+    left: calc(50% - 60px);
+    font-size: 1.2rem;
+    background-color: #9190d4;
+    border-radius: 8px;
+    color: #fff;
+    border-style: none;
+}
+
+
+.modal{
+	width: 100%;
+	height: 100vh;
+	display: grid;
+  align-items:center;
+}
+.modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+#btn-modal:checked ~ .modal{
+	opacity: 1;
+	visibility: visible;
+}
+.contenedor{
+	width: 500px;
+	height: 400px;
+	margin: auto;
+	background: #fff;
+	box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+	transition: all 500ms ease;
+	position: relative;
+	transform: translateY(-30%);
+  border-radius: 20px;
+}
+#btn-modal:checked ~ .modal .contenedor{
+	transform: translateY(0%);
+}
+.contenedor header{
+	padding: 10px;
+  background: linear-gradient(175deg, #393373, #9190d4);
+	color: #fff;
+  border-radius: 20px 20px 0 0;
+}
+.contenedor label{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;
+}
+.contenedor input{
+  background-color: #F7F7F7;
+  border: none;
+  border-radius: 4px;
+  height: 20px;
+  font-size: 20px;
+  padding: 20px;
+  margin-bottom: 5px;
+  width: 400px;
+}
+#emailHelp{
+  margin-bottom: 40px;
+  color: #757575;
+}
+.contenido{
+	width: 100%;
+	padding: 10px;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.contenido h3{
+	margin-bottom: 10px;
+}
+.contenido p{
+	margin-bottom: 7px;
+}
+.contenido button{
+  width: 250px;
+  height: 31px;
+  background-color: #9190d4;
+  border-style: none;
+}
+#btn-modal{
+	display: none;
+}
+
+.lbl-modal{
+  margin: 20px 10px 20px 10px;
+	padding: 10px 15px;
+	border-radius: 4px;
+	cursor: pointer;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/117/117885.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  border-radius: 25px 25px 25px 25px;
+  border: none;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+	.contenedor{
+		width: 100%;
+	}
+}
+
+
+/* .botonagregar {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/117/117885.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  border-radius: 25px 25px 25px 25px;
+  border: none;
+} */
+
+.usuario {
+  float: left;
+  padding-right: 700px;
+  color: white;
+}
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: faf8f7;
+
+    -webkit-animation: bgAnimateBitcoin 5s ease infinite;
+    -moz-animation: bgAnimateBitcoin 5s ease infinite;
+    animation: bgAnimateBitcoin 5s ease infinite;
+    background-size: 400% 400%;
+    height: 900px;
+
+  }
+  .cards-container {
+    /*grid-template-columns: repeat(auto-fill, 140px);*/
+
+    gap: 15px;
+    height: 316px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5% 50%;
+  }
+
+  .main-container{
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+  }
+  .product-card {
+    position: relative;
+    width: 60%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 200px;
+    margin: 50px 5px 0;
+    padding: 0 15px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+  }
+
+  .product-card img {
+    width: 140px;
+    height: 140px;
+  }
+  .product-info {
+    align-items: center;
+  }
+  /* .product-info figure {
+    margin: 0;
+  } */
+  .product-info figure img {
+    width: 35px;
+    height: 35px;
+  }
+  .product-card--title{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 3.3rem;
+    color: black;
+  }
+  .product-card--description{
+    font-size: 1.2rem;
+    color: #757575;
+  }
+  /* .product-info div p:nth-child(1) {
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+  .product-info div p:nth-child(2) {
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--very-light-pink);
+  } */
+  .product-card figure {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+
+@-webkit-keyframes bgAnimateBitcoin {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes bgAnimateBitcoin {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes bgAnimateBitcoin {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

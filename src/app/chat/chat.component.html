@@ -1,0 +1,68 @@
+<script src="chat.component.ts"></script>
+<link rel="stylesheet" href="chat.component.css">
+<div>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <a class="navbar-brand" style="color: white;" href="/home">&lt; Regresar</a>
+              <h3 class="usuario" id="user">{{chat[0].name}}</h3>
+              <a class="navbar-brand2" style="color: white;" (click)="signOff()">Cerrar Sesión</a>
+            </div>
+        </nav>
+    </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="border">
+          <br>
+          <div class="row" *ngFor="let message of messages">
+            <div *ngIf="nameUser == message.userUser;">
+              <div class="mySMS">
+                <h6>{{message.date}} {{message.time}}</h6>
+                <p>{{message.message}}</p>
+              </div>
+            </div>
+            <div *ngIf="nameUser2 == message.userUser">
+              <div class="SMS">
+                <h6>{{message.userUser}}<br>{{message.date}} {{message.time}}</h6>
+                <p>{{message.message}}</p>
+              </div>
+            </div>
+          </div>
+          <footer>
+            <input [(ngModel)]="SMS" id="input-msg" class="input-msg" type="text" name="msg-content" placeholder="Escribe un mensaje" title="input message">
+            <button class="btn-sent" type="button" name="button" (click)="sendSMS1()">&#8250;</button>
+          </footer>
+        </div>
+      </div>
+
+      <div class="col-sm">
+        <div class="border">
+          <br>
+          <div class="row" *ngFor="let message of messages">
+            <div *ngIf="nameUser2 == message.userUser;">
+              <div class="mySMS">
+                <h6>{{message.date}} {{message.time}}</h6>
+                <p>{{message.message}}</p>
+              </div>
+            </div>
+            <div *ngIf="nameUser == message.userUser">
+              <div class="SMS">
+                <h6>{{message.userUser}}<br>{{message.date}} {{message.time}}</h6>
+                <p>{{message.message}}</p>
+              </div>
+            </div>
+          </div>
+          <footer>
+            <input [(ngModel)]="SMS2" id="input-msg2" class="input-msg" type="text" name="msg-content" placeholder="Escribe un mensaje" title="input message">
+            <button class="btn-sent" type="button" name="button" (click)="sendSMS2()">&#8250;</button>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</div>

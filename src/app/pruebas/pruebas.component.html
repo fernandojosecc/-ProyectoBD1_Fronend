@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+          <div class="border">
+            <br>
+            <div class="row" *ngFor="let message of messages">
+                <div *ngIf="nameUser == message.userUser;">
+                  <div class="mySMS">
+                    <h6>{{message.date}} {{message.time}}</h6>
+                    <p>{{message.message}}</p>
+                  </div>
+                </div>
+                <div *ngIf="nameUser2 == message.userUser">
+                  <div class="SMS">
+                    <h6>{{message.userUser}}<br>{{message.date}} {{message.time}}</h6>
+                    <p>{{message.message}}</p>
+                  </div>
+                </div>
+            </div>
+            <footer>
+              <input [(ngModel)]="SMS" id="input-msg" class="input-msg" type="text" name="msg-content" placeholder="Escribe un mensaje" title="input message">
+              <button type="button" (click)="sendSMS1()">ENVIAR SMS</button>
+            </footer>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="border">
+            <br>
+            <div class="row" *ngFor="let message of messages">
+              <div *ngIf="nameUser2 == message.userUser;">
+                <div class="mySMS">
+                  <h6>{{message.date}} {{message.time}}</h6>
+                  <p>{{message.message}}</p>
+                </div>
+              </div>
+              <div *ngIf="nameUser == message.userUser">
+                <div class="SMS">
+                  <h6>{{message.userUser}}<br>{{message.date}} {{message.time}}</h6>
+                  <p>{{message.message}}</p>
+                </div>
+              </div>
+            </div>
+            <footer>
+              <input [(ngModel)]="SMS2" id="input-msg2" class="input-msg" type="text" name="msg-content" placeholder="Escribe un mensaje" title="input message">
+              <button type="button" (click)="sendSMS2()">ENVIAR SMS</button>
+            </footer>
+          </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet" /> -->
+    <title>Home</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <link href="admin.component.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <h3 class="usuario" id="user">{{nameUser}}</h3>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+            </button>
+                    <a class="navbar-brand" style="color: white;" href="/user-creation">Creacion usuario</a>
+                    <a class="navbar-brand" style="color: white;" href="#">Cerrar Sesión</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="main-container">
+            <div class="cards-container">
+                <div class="product-card" *ngFor="let chat of chats">
+                    <button class="botoncanal" (click)="getChat(chat.idchannel)">Ingresar</button>
+                    <div class="product-info">
+                        <p class="product-card--title">{{chat.name}}</p>
+                        <p class="product-card--description">{{chat.description}}</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <input type="checkbox" id="btn-modal">
+                    <a type="button" class="botonagregar" for="btn-modal"></a>
+                    <label for="btn-modal" class="lbl-modal"></label>
+                    <div class="modal">
+                        <div class="contenedor">
+                            <header>¡Agrega un canal!</header>
+                            <label for="btn-modal">x</label>
+                            <div class="contenido">
+                                <form class="channel-form" (ngSubmit)="formulariochannel()" id="channelForm">
+                                    <div class="mb-3">
+                                        <input type="text" placeholder="Nombre canal" class="form-control" class="text" [(ngModel)]="channel.name" [ngModelOptions]="{standalone: true}" required id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">Ingresa el nombre del canal</div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="text" placeholder="Descripción" class="form-control" class="text" [(ngModel)]="channel.description" [ngModelOptions]="{standalone: true}" required id="exampleInputEmail2" aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">Agrega una descripción al canal</div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary ">Agregar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="tex">Agregar canal</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <footer></footer>
+</body>
+
+</html>

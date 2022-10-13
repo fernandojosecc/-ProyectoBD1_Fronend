@@ -8,16 +8,20 @@ import { ChatComponent } from './chat/chat.component';
 import { UserEditionComponent } from './user-edition/user-edition.component';
 import { PruebasComponent } from './pruebas/pruebas.component';
 import { AdminComponent } from './admin/admin.component';
+import { MisreservacionesComponent } from './misreservaciones/misreservaciones.component';
+import { RealizarreservacionesComponent } from './realizarreservaciones/realizarreservaciones.component';
 
 const routes: Routes = [
 
-{path:'',component:LoginComponent},
-{path:'home',component:HomeComponent},
+{path:'',component:HomeComponent},
+{path:'login',component:LoginComponent},
 {path:'user-creation',component:UserCreationComponent},
 {path:'user-edition',component:UserEditionComponent},
 {path: 'chat', component:ChatComponent},
 {path: 'pruebas', component:PruebasComponent},
   {path: 'admin', component:AdminComponent},
+{path: 'misreservaciones',component:MisreservacionesComponent},
+{path: 'realizarreservaciones',component:RealizarreservacionesComponent},
 
 
 ];

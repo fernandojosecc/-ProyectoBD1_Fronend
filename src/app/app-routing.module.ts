@@ -13,8 +13,8 @@ import { RealizarreservacionesComponent } from './realizarreservaciones/realizar
 
 const routes: Routes = [
 
-{path:'',component:HomeComponent},
-{path:'login',component:LoginComponent},
+{path:'',component:LoginComponent},
+{path:'home',component:HomeComponent},
 {path:'user-creation',component:UserCreationComponent},
 {path:'user-edition',component:UserEditionComponent},
 {path: 'chat', component:ChatComponent},

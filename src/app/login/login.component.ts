@@ -73,7 +73,7 @@ export class LoginComponent implements OnInit {
     }
 
     validar(){
-      if (this.user.user == "admin" && this.user.pass == "admin") {
+      if (this.user.idUsuario == "admin" && this.user.contrasenia == "admin") {
         location.href = "/admin";
       }else{
         this.formulariologin();

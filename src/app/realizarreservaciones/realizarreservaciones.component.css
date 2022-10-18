@@ -247,3 +247,22 @@ ul li a:hover{
 .icons ion-icon:hover{
   color: #ff7200;
 }
+.grid-container{
+  max-width: 980px;
+    margin: auto;
+}
+.grid-container h3, h4, p{
+  color: white;
+}
+.grid-container h3{
+  border-bottom: 1px solid #cdd2da;
+  padding-bottom: 35px;
+  text-align: center;
+}
+.projects-main-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.projects-main-container{
+  padding: 0 05px;
+}

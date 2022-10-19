@@ -10,6 +10,8 @@ import { PruebasComponent } from './pruebas/pruebas.component';
 import { AdminComponent } from './admin/admin.component';
 import { MisreservacionesComponent } from './misreservaciones/misreservaciones.component';
 import { RealizarreservacionesComponent } from './realizarreservaciones/realizarreservaciones.component';
+import { EncomiendasComponent } from './encomiendas/encomiendas.component';
+import { VentasboletosComponent } from './ventasboletos/ventasboletos.component';
 
 const routes: Routes = [
 
@@ -22,6 +24,8 @@ const routes: Routes = [
   {path: 'admin', component:AdminComponent},
 {path: 'misreservaciones',component:MisreservacionesComponent},
 {path: 'realizarreservaciones',component:RealizarreservacionesComponent},
+{path: 'encomiendas',component:EncomiendasComponent},
+{path:'ventasboletos',component:VentasboletosComponent},
 
 
 ];

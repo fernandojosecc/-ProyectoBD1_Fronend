@@ -15,6 +15,8 @@ import { AdminComponent } from './admin/admin.component';
 import { PruebasComponent } from './pruebas/pruebas.component';
 import { MisreservacionesComponent } from './misreservaciones/misreservaciones.component';
 import { RealizarreservacionesComponent } from './realizarreservaciones/realizarreservaciones.component';
+import { VentasboletosComponent } from './ventasboletos/ventasboletos.component';
+import { EncomiendasComponent } from './encomiendas/encomiendas.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { RealizarreservacionesComponent } from './realizarreservaciones/realizar
     ChatComponent,
     PruebasComponent,
     MisreservacionesComponent,
-    RealizarreservacionesComponent
+    RealizarreservacionesComponent,
+    VentasboletosComponent,
+    EncomiendasComponent
   ],
   imports: [
     BrowserModule,

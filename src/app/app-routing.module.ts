@@ -21,7 +21,7 @@ const routes: Routes = [
 {path:'user-edition',component:UserEditionComponent},
 {path: 'chat', component:ChatComponent},
 {path: 'pruebas', component:PruebasComponent},
-  {path: 'admin', component:AdminComponent},
+{path: 'admin', component:AdminComponent},
 {path: 'misreservaciones',component:MisreservacionesComponent},
 {path: 'realizarreservaciones',component:RealizarreservacionesComponent},
 {path: 'encomiendas',component:EncomiendasComponent},

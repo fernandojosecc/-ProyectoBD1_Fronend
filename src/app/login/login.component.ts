@@ -41,17 +41,21 @@ export class LoginComponent implements OnInit {
     }
 
     login(res:any){
-    console.log(res)
-      if(res.length == 0){
-        this.usuarioInvalido=true;
-        console.log("paso por null")
+    console.log(JSON.parse(JSON.stringify(res)))
+    console.log(res[0].idUsuario)
+      let res1:any=res[0];
+      console.log(res1[0].idUsuario)
+      if(res1[0].idUsuario >= 1){
+        console.log(JSON.stringify(res));
+        localStorage.setItem("user",JSON.stringify(res));
+         location.href="/home";
       }
       else if(res=="e"){
         alert("No hay comunicación con el servidor!!")
       }
-      else if(res!=null){
-        localStorage.setItem("user",JSON.stringify(res));
-        location.href="/home";
+      else{
+        this.usuarioInvalido=true;
+        console.log("simon que no")
       }
     }
 

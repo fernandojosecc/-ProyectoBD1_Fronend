@@ -251,8 +251,34 @@ ul li a:hover{
   max-width: 980px;
     margin: auto;
 }
-.grid-container h3, h4, p{
+.encabezado01{
   color: white;
+}
+
+.encabezado{
+  color: white;
+  background-color: black;
+}
+
+tbody th:nth-child(1) {
+  color: white;
+}
+tbody th:nth-child(2) {
+  color: white;
+}
+tbody th:nth-child(3) {
+  color: white;
+}
+tbody td:nth-child(2) {
+  color: white;
+}
+tbody td:nth-child(3) {
+  color: white;
+}
+.table01{
+}
+table02{
+
 }
 .grid-container h3{
   border-bottom: 1px solid #cdd2da;

@@ -22,27 +22,11 @@
         <li><a href="#">Cerrar Sesion</a></li>
       </ul>
     </div>
-    <!-- <div class="contenedor">
-      <table class="table table-hover table-dark">
-        <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
-        </tr>
-        </thead>
-        <tbody>
-
-        </tbody>
-      </table>
-    </div> -->
-
 
   </div>
   <div class="grid-container">
-    <h3>Reservacions y compras en linea</h3>
-    <div class="projects-main-container">
+    <h3 class="encabezado01">Reservacions y compras en linea</h3>
+<!--    <div class="projects-main-container">
         <article class="project-container">
             <h4>Bus</h4>
             <p></p>
@@ -59,8 +43,59 @@
             <h4>Tiempo estimado</h4>
             <p></p>
         </article>
+      <tbody>
+      <tr>
+        <th scope="row"></th>
+        <td>pruebas</td>
+        <td>123</td>
+        <td>154</td>
+        <td class="center"></td>
+      </tr>
+      </tbody>
+    </div>-->
+    <div class="row">
+      <div class="table01 col-6">
+        <table class="table table-striped">
+          <thead  class="borde">
+          <tr>
+            <th class="encabezado" scope="col">Bus</th>
+            <th class="encabezado" scope="col">Pasajeros</th>
+            <th class="encabezado" scope="col">Matricula</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let viaje of viajes01" >
+            <th scope="row">{{viaje.descripcion}}</th>
+            <td>{{viaje.pasajeros}}</td>
+            <td>{{viaje.matricula}}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table02 col-6">
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th class="encabezado" scope="col">Numero de ruta</th>
+            <th class="encabezado" scope="col">Hora Salida</th>
+            <th class="encabezado" scope="col">Hora Llegada</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let viaje of viajes02">
+            <th scope="row">{{viaje.idRuta}}</th>
+            <th scope="row">{{viaje.horaSalida}}</th>
+            <th scope="row">{{viaje.horaLlegada}}</th>
+          </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 </div>
+  <div>
+    <input type="text" placeholder="Usuario" name="user" ><br>
+
+  </div>
 </div>
 </body>
 </html>

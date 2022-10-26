@@ -22,57 +22,38 @@
         <li><a href="#">Cerrar Sesion</a></li>
       </ul>
     </div>
-    <!-- <div class="contenedor">
-      <table class="table table-hover table-dark">
-        <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
-        </tr>
-        </thead>
-        <tbody>
-
-        </tbody>
-      </table>
-    </div> -->
-
 
   </div>
   <div class="grid-container">
     <h3>Encomiendas</h3>
-    <div class="projects-main-container">
-        <article class="project-container">
-            <h4>Bus</h4>
-            <p></p>
-        </article>
-        <article class="project-container">
-            <h4>Tipo de bus</h4>
-            <p></p>
-        </article>
-        <article class="project-container">
-            <h4>Horario de salida</h4>
-            <p></p>
-        </article>
-        <article class="project-container">
-            <h4>Tiempo estimado</h4>
-            <p></p>
-        </article>
-        <article class="project-container">
-          <h4>Tiempo estimado</h4>
-          <p></p>
-      </article>
-      <article class="project-container">
-        <h4>Tiempo estimado</h4>
-        <p></p>
-    </article>
-    <article class="project-container">
-      <h4>Tiempo estimado</h4>
-      <p></p>
-  </article>
+    <div class="row">
+      <div class="table01 col-12">
+        <table class="table table-striped">
+          <thead  class="borde">
+          <tr>
+            <th class="encabezado" scope="col">Tarifa</th>
+            <th class="encabezado" scope="col">Peso</th>
+            <th class="encabezado" scope="col">Tamaño</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let encomiendas of encomiendas01" >
+            <th scope="row">{{encomiendas.tarifa}}</th>
+            <td>{{encomiendas.peso}}</td>
+            <td>{{encomiendas.metroCubico}}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 </div>
+  <div>
+  <!--(ngSubmit)="validar()"-->
+  <form class="login"  id="loginForm">
+    <input type="text" placeholder="Usuario" name="user">
+    <input type="text" placeholder="password" name="password" >
+  </form>
+  </div>
 </div>
 </body>
 </html>

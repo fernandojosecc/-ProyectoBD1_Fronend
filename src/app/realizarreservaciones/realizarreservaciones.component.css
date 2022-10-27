@@ -320,3 +320,10 @@ table02{
   gap: 10px;
   justify-content: center;
 }
+.encomiendas-form .boton-encomiendas{
+  grid-column-start: 1;
+  grid-column-end: 7;
+  border-color: transparent;
+  background-color: #f1bf95;
+  padding: 5px;
+}

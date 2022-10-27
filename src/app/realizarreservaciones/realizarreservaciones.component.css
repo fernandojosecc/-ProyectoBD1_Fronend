@@ -12,9 +12,12 @@
 }
 
 .navbar{
-  width: 1200px;
+  width: 100%px;
   height: 75px;
   margin: auto;
+  background-color: rgba(48, 46, 46, 0.856);
+  padding-right: 20px;
+  margin-bottom: 100px;
 }
 
 .icon{
@@ -309,6 +312,7 @@ table02{
   border-bottom-color: whitesmoke;
   border-top-color: whitesmoke;
   text-align: center;
+  color: white;
 
 }
 .encomiendas-form h3{

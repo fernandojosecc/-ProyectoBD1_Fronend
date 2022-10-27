@@ -1,21 +1,78 @@
+*{
+
+  }
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 900px;
-    background: linear-gradient(232deg, #393373, #9190d4);
-    background-size: 400% 400%;
-
-    -webkit-animation: bgAnimateBitcoin 5s ease infinite;
-    -moz-animation: bgAnimateBitcoin 5s ease infinite;
-    animation: bgAnimateBitcoin 5s ease infinite;
-    margin: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(https://besthqwallpapers.com/Uploads/8-3-2020/124199/thumb2-man-lions-city-18-g-4k-road-2020-buses-passenger-transport.jpg);
+    background-position: center;
+    background-size: cover;
     font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 50px;
+      bottom: 0;
+      left: 0;
+      right: 0;
 }
-nav{
-  background: #000000;
-  border: none;
-}
+.navbar{
+    width: 100%px;
+    height: 75px;
+    margin: auto;
+    background-color: rgba(48, 46, 46, 0.856);
+    padding-right: 20px;
+    margin-bottom: 100px;
+  }
+  
+  .icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+  }
+  
+  .logo{
+    padding-left: 20px;
+    float: left;
+  }
+  
+  .icon a{
+    text-decoration: none;
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+  }
+  
+.menu{
+
+    float: left;
+  }
+  
+  ul{
+    float: left;
+    display: flex;
+  }
+  
+  ul li{
+    list-style: none;
+    margin-left: 62px;
+    font-size: 14px;
+  }
+  
+  ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+  }
+  
+  ul li a:hover{
+    color: #ff7200;
+  }
+  
 
 .login {
     width: 100%;
@@ -75,7 +132,7 @@ nav{
 }
 
 .primary-button {
-    background: #9190d4;
+    background: #f1bf95;
     border-radius: 8px;
     border: none;
     color: #FFFFFF;

@@ -15,52 +15,41 @@
     <div class="menu">
       <ul>
         <li><a href="home">HOME</a></li>
-        <li><a href="misreservaciones">Mis reservaciones</a></li>
-        <li><a href="realizarreservaciones">Realizar reservacion</a></li>
-        <li><a href="encomiendas">Encomiendas</a></li>
-        <li><a href="ventasboletos">Venta de Boletos</a></li>
+        <li><a *ngIf="menu3" href="misreservaciones">Mis reservaciones</a></li>
+        <li><a *ngIf="menu2" href="realizarreservaciones">Realizar reservacion</a></li>
+        <li><a *ngIf="menu4" href="encomiendas">Encomiendas</a></li>
+        <li><a *ngIf="menu1" href="ventasboletos">Venta de Boletos</a></li>
         <li><a href="#">Cerrar Sesion</a></li>
       </ul>
     </div>
-    <!-- <div class="contenedor">
-      <table class="table table-hover table-dark">
-        <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
-        </tr>
-        </thead>
-        <tbody>
-
-        </tbody>
-      </table>
-    </div> -->
-
 
   </div>
   <div class="grid-container">
     <h3>Mis reservaciones</h3>
-    <div class="projects-main-container">
-        <article class="project-container">
-            <h4>Bus</h4>
-            <p></p>
-        </article>
-        <article class="project-container">
-            <h4>Tipo de bus</h4>
-            <p></p>
-        </article>
-        <article class="project-container">
-            <h4>Horario de salida</h4>
-            <p></p>
-        </article>
-        <article class="project-container">
-            <h4>Tiempo estimado</h4>
-            <p></p>
-        </article>
+    <div class="row">
+      <div class="table01 col-12">
+        <table class="table table-striped">
+          <thead  class="borde">
+          <tr>
+            <th class="encabezado" scope="col">Bus</th>
+            <th class="encabezado" scope="col">Pasajero</th>
+            <th class="encabezado" scope="col">Matricula</th>
+            <th class="encabezado" scope="col">Numero ruta</th>
+            <th class="encabezado" scope="col">Hora salida</th>
+            <th class="encabezado" scope="col">Hora llegada</th>
+          </tr>
+          </thead>
+          <tbody>
+          <!--<tr *ngFor="let encomiendas of encomiendas01" >
+            <th scope="row">{{encomiendas.tarifa}}</th>
+            <td>{{encomiendas.peso}}</td>
+            <td>{{encomiendas.metroCubico}}</td>
+          </tr>-->
+          </tbody>
+        </table>
+      </div>
     </div>
-</div>
+  </div>
 </div>
 </body>
 </html>

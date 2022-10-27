@@ -15,10 +15,10 @@
     <div class="menu">
       <ul>
         <li><a href="home">HOME</a></li>
-        <li><a href="misreservaciones">Mis reservaciones</a></li>
-        <li><a href="realizarreservaciones">Realizar reservacion</a></li>
-        <li><a href="encomiendas">Encomiendas</a></li>
-        <li><a href="ventasboletos">Venta de Boletos</a></li>
+        <li><a *ngIf="menu3" href="misreservaciones">Mis reservaciones</a></li>
+        <li><a *ngIf="menu2" href="realizarreservaciones">Realizar reservacion</a></li>
+        <li><a *ngIf="menu4" href="encomiendas">Encomiendas</a></li>
+        <li><a *ngIf="menu1" href="ventasboletos">Venta de Boletos</a></li>
         <li><a href="#">Cerrar Sesion</a></li>
       </ul>
     </div>
@@ -26,33 +26,6 @@
   </div>
   <div class="grid-container">
     <h3 class="encabezado01">Reservacions y compras en linea</h3>
-<!--    <div class="projects-main-container">
-        <article class="project-container">
-            <h4>Bus</h4>
-            <p></p>
-        </article>
-        <article class="project-container">
-            <h4>Tipo de bus</h4>
-            <p></p>
-        </article>
-        <article class="project-container">
-            <h4>Horario de salida</h4>
-            <p></p>
-        </article>
-        <article class="project-container">
-            <h4>Tiempo estimado</h4>
-            <p></p>
-        </article>
-      <tbody>
-      <tr>
-        <th scope="row"></th>
-        <td>pruebas</td>
-        <td>123</td>
-        <td>154</td>
-        <td class="center"></td>
-      </tr>
-      </tbody>
-    </div>-->
     <div class="row">
       <div class="table01 col-6">
         <table class="table table-striped">

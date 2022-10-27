@@ -292,3 +292,31 @@ table02{
 .projects-main-container{
   padding: 0 05px;
 }
+
+/* Codigo de formulario */
+.grid-container-form{
+  max-width: 980px;
+    margin: auto;
+    margin-top: 10rem;
+    text-align: center;
+
+}
+.encomiendas-form input{
+
+  background-color: transparent;
+  border-left-color: white;
+  border-right-color: white;
+  border-bottom-color: whitesmoke;
+  border-top-color: whitesmoke;
+  text-align: center;
+
+}
+.encomiendas-form h3{
+  color: white;
+}
+.encomiendas-form{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  justify-content: center;
+}

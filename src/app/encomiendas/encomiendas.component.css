@@ -316,4 +316,12 @@ tbody td:nth-child(3) {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 10px;
+  justify-content: center;
+}
+.encomiendas-form .boton-encomiendas{
+  grid-column-start: 1;
+  grid-column-end: 6;
+  border-color: transparent;
+  background-color: #f1bf95;
+  padding: 5px;
 }

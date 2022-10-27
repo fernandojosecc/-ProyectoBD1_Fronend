@@ -15,7 +15,11 @@
     <div class="menu">
       <ul>
         <li><a href="home">HOME</a></li>
-        <li><a href="#">Iniciar Sesion</a></li>
+        <li><a *ngIf="menu2" href="realizarreservaciones">Realizar reservacion</a></li>
+        <li><a *ngIf="menu1" href="ventasboletos">Venta de Boletos</a></li>
+        <li><a *ngIf="menu3" href="misreservaciones">Mis reservaciones</a></li>
+        <li><a *ngIf="menu4"  href="encomiendas">Encomiendas</a></li>
+        <li><a href="#">Cerrar Sesion</a></li>
       </ul>
     </div>
 

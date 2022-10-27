@@ -20,6 +20,7 @@
     <input type="text" placeholder="Usuario" name="user" [(ngModel)]="user.idUsuario" [ngModelOptions]="{standalone: true}" required><br>
     <input type="password" placeholder="password" name="password" [(ngModel)]="user.contrasenia" [ngModelOptions]="{standalone: true}" required><br>
     <button type="submit" class="prueba">Iniciar Sesión</button>
+    <button  class="usercreation-loginpage"><a href="user-creation">Crear Usuario</a></button>
     <div *ngIf="usuarioInvalido" class="alert alert-danger prueba alerta" role="alert">
       El usuario o contraseña son incorrectas.
     </div>

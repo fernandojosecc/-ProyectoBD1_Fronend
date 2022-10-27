@@ -9,26 +9,13 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-  background: #fff;
-
-  color: #fff;
   font-family: Arial;
   font-size: 12px;
+  background: url(https://besthqwallpapers.com/Uploads/8-3-2020/124199/thumb2-man-lions-city-18-g-4k-road-2020-buses-passenger-transport.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
-.body{
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  right: -40px;
-  bottom: -40px;
-  width: auto;
-  height: auto;
-  background-image: url(https://ganar-ganar.mx/wp-content/uploads/2019/12/Se-incorporan-al-sistema-RTP-30-autobuses-Volvo.jpg);
-  background-size: cover;
-  -webkit-filter: blur(5px);
-  z-index: 0;
-}
 
 .grad{
   position: absolute;
@@ -38,30 +25,70 @@ body{
   bottom: -40px;
   width: auto;
   height: auto;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
   z-index: 1;
   opacity: 0.7;
 }
 
-.header{
-  position: absolute;
-  top: calc(50% - 35px);
-  left: calc(50% - 255px);
-  z-index: 2;
+.navbar{
+  width: 100%px;
+  height: 75px;
+  margin: auto;
+  background-color: rgba(48, 46, 46, 0.856);
+  padding-right: 20px;
+  margin-bottom: 100px;
+
 }
 
-.header div{
+.icon{
+  width: 200px;
   float: left;
+  height: 70px;
 }
-.header a{
-  font-family: 'Exo', sans-serif;
+
+.logo{
+  padding-left: 20px;
+  float: left;
+  padding-top: 10px;
+  margin-top: 5px;
+  
+}
+
+.icon a{
+  text-decoration: none;
+  color: #ff7200;
   font-size: 35px;
-  font-weight: 200;
+  font-family: Arial;
+}
+
+.menu{
+  float: left;
+  height: 70px;
+}
+
+ul{
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li{
+  list-style: none;
+  margin-left: 62px;
+  margin-top: 27px;
+  font-size: 14px;
+}
+
+ul li a{
   text-decoration: none;
   color: #fff;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
 }
-.header div span{
-  color: #00FF00 !important;
+
+ul li a:hover{
+  color: #ff7200;
 }
 
 .login{
@@ -157,5 +184,8 @@ body{
 
 ::-moz-input-placeholder{
   color: rgba(255,255,255,0.6);
+}
+.form-body button{
+  background-color: #f1bf95;
 }
 

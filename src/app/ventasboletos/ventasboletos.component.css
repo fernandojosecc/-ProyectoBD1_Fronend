@@ -279,3 +279,53 @@
   color: white;
   background-color: black;
 }
+tbody th:nth-child(1) {
+  color: white;
+}
+tbody th:nth-child(2) {
+  color: white;
+}
+tbody th:nth-child(3) {
+  color: white;
+}
+tbody td:nth-child(2) {
+  color: white;
+}
+tbody td:nth-child(3) {
+  color: white;
+}
+.encomiendas-form input{
+
+  background-color: transparent;
+  border-left-color: white;
+  border-right-color: white;
+  border-bottom-color: whitesmoke;
+  border-top-color: whitesmoke;
+  text-align: center;
+  color: white;
+
+}
+.encomiendas-form h3{
+  color: white;
+}
+.encomiendas-form{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  justify-content: center;
+}
+.encomiendas-form .boton-encomiendas{
+  grid-column-start: 1;
+  grid-column-end: 7;
+  border-color: transparent;
+  background-color: #f1bf95;
+  padding: 5px;
+}
+
+.grid-container-form{
+  max-width: 980px;
+  margin: auto;
+  margin-top: 10rem;
+  text-align: center;
+
+}

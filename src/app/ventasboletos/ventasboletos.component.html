@@ -36,15 +36,20 @@
           </tr>
           </thead>
           <tbody>
-          <!--<tr *ngFor="let encomiendas of encomiendas01" >
-            <th scope="row">{{encomiendas.tarifa}}</th>
-            <td>{{encomiendas.peso}}</td>
-            <td>{{encomiendas.metroCubico}}</td>
-          </tr>-->
+          <tr *ngFor="let boleto of boleto" >
+            <th scope="row">{{boleto.idBoleto}}</th>
+            <td>{{boleto.numero_Boleto}}</td>
+          </tr>
           </tbody>
         </table>
       </div>
     </div>
+  </div>
+  <div class="grid-container-form">
+    <!--(ngSubmit)="validar()"-->
+    <form class="encomiendas-form"  id="loginForm">
+  <button (click)="crearBoleto()" class="boton-encomiendas"><h4>Crear boleto</h4></button>
+    </form>
   </div>
 </div>
 </body>

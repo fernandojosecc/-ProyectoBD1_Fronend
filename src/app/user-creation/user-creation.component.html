@@ -16,14 +16,14 @@
         <div class="icon">
           <h2 class="logo"><a href="home"> ArrowFast</a></h2>
         </div>
-    
+
         <div class="menu">
           <ul>
-            
+
             <li><a href="#">Regresar</a></li>
           </ul>
         </div>
-    
+
       </div>
 </header>
 <body>
@@ -32,23 +32,26 @@
             <h1 class="title">Mi Cuenta</h1>
             <form action="/" (ngSubmit)="createAccount()" id="form">
                 <div>
-                    <label for="first-name" class="label">Primer nombre</label>
+                    <label for="first-name" class="label">Nombre</label>
                     <input type="text" id="first-name" placeholder="Ej: Fernando" class="input input-first-name" [(ngModel)]="users.firstName" [ngModelOptions]="{standalone:true}" required>
 
-                    <label for="second-name" class="label">Segundo nombre</label>
+                    <label for="second-name" class="label">Apellido</label>
                     <input type="text" id="second-name" placeholder="Ej: Jose" class="input input-second-name" [(ngModel)]="users.secondName" [ngModelOptions]="{standalone:true}" required>
 
-                    <label for="first-last-name" class="label">Primer Apellido</label>
-                    <input type="text" id="first-last-name" placeholder="Ej: Contreras" class="input input-first-last-name" [(ngModel)]="users.firstLastName" [ngModelOptions]="{standalone:true}" required>
+                    <label for="first-last-name" class="label">Telefono</label>
+                    <input type="text" id="first-last-name" placeholder="Ej: 12345678" class="input input-first-last-name" [(ngModel)]="users.firstLastName" [ngModelOptions]="{standalone:true}" required>
 
-                    <label for="second-last-name" class="label">Segundo Apellido</label>
-                    <input type="text" id="second-last-name" placeholder="Ej: Corzo" class="input input-second-last-name" [(ngModel)]="users.secondLastName" [ngModelOptions]="{standalone:true}" required>
+                    <label for="second-last-name" class="label">Correo</label>
+                    <input type="text" id="second-last-name" placeholder="Ej: correo@gmail.com" class="input input-second-last-name" [(ngModel)]="users.secondLastName" [ngModelOptions]="{standalone:true}" required>
 
-                    <label for="phone" class="label">Teléfono</label>
-                    <input type="text" id="phone" placeholder="Ej: 62538468" class="input input-phone" [(ngModel)]="users.telephone" [ngModelOptions]="{standalone:true}" required>
+                    <label for="phone" class="label">Direccion</label>
+                    <input type="text" id="phone" placeholder="Ej: No. Avenida" class="input input-phone" [(ngModel)]="users.telephone" [ngModelOptions]="{standalone:true}" required>
+
+                  <label for="phone" class="label">Documento de identificacion</label>
+                  <input type="text" id="documento" placeholder="Ej: 62538468" class="input input-phone" [(ngModel)]="users.telephone" [ngModelOptions]="{standalone:true}" required>
 
                     <label for="password" class="label">Contraseña</label>
-                    <input type="password" id="password" placeholder="Ej: ********" class="input input-password" [(ngModel)]="users.password" [ngModelOptions]="{standalone:true}" required>
+                    <input type="password" id="password" placeholder="********" class="input input-password" [(ngModel)]="users.password" [ngModelOptions]="{standalone:true}" required>
                 </div>
                 <input type="submit" value="Crear" class="primary-button login-button">
             </form>

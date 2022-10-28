@@ -12,6 +12,7 @@ import { connectableObservableDescriptor } from 'rxjs/internal/observable/Connec
 })
 export class HomeComponent implements OnInit {
   user:any={};
+  user01 :any = {}
   nameUser = ""
   chats:any = []
   allChats:any = []
@@ -31,7 +32,7 @@ export class HomeComponent implements OnInit {
     this.user = localStorage.getItem("user");
     this.user = JSON.parse(this.user);
     this.nameUser = this.user[0].user;
-
+    this.user01 = this.user[1]
     this.menus = this.user[0]
     this.menus = this.menus[0].rolUsuarioMenuList
     console.log(this.user)

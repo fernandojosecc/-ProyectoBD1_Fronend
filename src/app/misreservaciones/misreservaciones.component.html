@@ -31,20 +31,27 @@
         <table class="table table-striped">
           <thead  class="borde">
           <tr>
-            <th class="encabezado" scope="col">Bus</th>
-            <th class="encabezado" scope="col">Pasajero</th>
-            <th class="encabezado" scope="col">Matricula</th>
-            <th class="encabezado" scope="col">Numero ruta</th>
-            <th class="encabezado" scope="col">Hora salida</th>
-            <th class="encabezado" scope="col">Hora llegada</th>
+            <th class="encabezado" scope="col">Numero encomienda</th>
+            <th class="encabezado" scope="col">Fragil</th>
+            <th class="encabezado" scope="col">Descripcion</th>
+            <th class="encabezado" scope="col">Peso</th>
+            <th class="encabezado" scope="col">Codigo de tarifa</th>
+            <th class="encabezado" scope="col">Codigo de tipo encomienda</th>
+            <th class="encabezado" scope="col">Codigo de la ruta de la encomienda</th>
+            <th class="encabezado" scope="col">Codigo del remitente </th>
           </tr>
           </thead>
           <tbody>
-          <!--<tr *ngFor="let encomiendas of encomiendas01" >
-            <th scope="row">{{encomiendas.tarifa}}</th>
-            <td>{{encomiendas.peso}}</td>
-            <td>{{encomiendas.metroCubico}}</td>
-          </tr>-->
+          <tr *ngFor="let reservacion of reservaciones " >
+            <th scope="row">{{reservacion.idEncomienda}}</th>
+            <td>{{reservacion.fragil}}</td>
+            <td>{{reservacion.descripcion}}</td>
+            <td>{{reservacion.peso}}</td>
+            <td>{{reservacion.idTarifaEncomienda}}</td>
+            <td>{{reservacion.idTipoEncomienda}}</td>
+            <td>{{reservacion.idRuta}}</td>
+            <td>{{reservacion.idRemitente}}</td>
+          </tr>
           </tbody>
         </table>
       </div>
